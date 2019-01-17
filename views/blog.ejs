@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<% if (blog.length > 0) { %>
+    <% for (var i = 0; i< blog.length; i++) { %>
+        <h1><%= blog[i].title  %></h1>
+        <h2><%= blog[i].author  %></h2>
+        <h3><%= blog[i].body  %></h3>
+        <img src="<%= blog[i].imageURL %>" alt="">
+        <br>
+    <% }%>
+<% }%>
+</body>
+</html>
