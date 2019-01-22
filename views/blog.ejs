@@ -9,14 +9,18 @@
 <body>
 
 
+    
 <% if (blog.length > 0) { %>
     <% for (var i = 0; i< blog.length; i++) { %>
-        <h1><%= blog[i].title  %></h1>
-        <h2><%= blog[i].author  %></h2>
+        <h1><%= blog[i].title  %> </h1>
+        <img style= "width : 8%" src="<%= blog[i].img_path %>" alt="">
+        <h2><%= blog[i].fname  %> <%= blog[i].lname  %>  </h2>
+        <h3><%= blog[i].publish_date  %> </h3>
         <h3><%= blog[i].body  %></h3>
-        <img src="<%= blog[i].imageURL %>" alt="">
         <br>
     <% }%>
 <% }%>
+
+
 </body>
 </html>
